@@ -18,6 +18,7 @@ const Accept = () => {
       const email = searchParams.get('email');
       console.log('email: ', email);
       const token = searchParams.get('token');
+      console.log('token: ', token);
 
       if (email && token) {
         try {
