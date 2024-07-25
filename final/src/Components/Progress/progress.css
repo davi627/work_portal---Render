@@ -1,0 +1,56 @@
+.applications-list {
+  padding: 20px;
+  max-width: 90%; /* Adjust the size of the component to fit the layout */
+  margin: 0 auto;
+}
+
+.applications-list h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.applications-list ul {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four items per row */
+  gap: 15px; /* Space between items */
+}
+
+.applications-list li {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.applications-list li h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.applications-list li p {
+  margin: 5px 0;
+}
+
+.applications-list .error {
+  color: red;
+  text-align: center;
+}
+
+.applications-list button {
+  display: block;
+  background-color: #4caf50; /* Green background */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 1em;
+  height: 40px;
+}
+
+.applications-list button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}

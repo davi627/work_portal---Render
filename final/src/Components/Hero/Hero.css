@@ -1,0 +1,27 @@
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(174, 180, 171, 0.7),rgba(8,58,58,0.7)), url('../../assets/gn.webp');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.hero-text{
+    text-align: center;
+    max-width: 800px;
+}
+.btn{
+    border-radius: 30px;
+    background: #fff;
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    border-color: blueviolet;
+    font-size: 1em;
+    
+}

@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.progress-tracking {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /* Adjust width as needed */
+  margin: 20px auto;
+  text-align: center;
+}
+
+.progress-tracking h2 {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.progress-bar {
+  width: 200px; /* Adjust width of the progress bar */
+  margin-right: 20px; /* Adjust spacing between progress bar and images */
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.photo-card {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  width: calc(50% - 20px); /* Adjust width of photo cards */
+}
+
+.image-download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.view-button {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view-button:hover {
+  background-color: #0056b3;
+}
+
+.view-button .fa-eye {
+  font-size: 18px;
+}
+
+.progress-state {
+  font-size: 20px;
+  color: #555;
+}
+
+.progress-state .progress-value {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.error-message {
+  display: block;
+  margin-top: 15px;
+  color: #ff0000;
+  font-size: 16px;
+  font-weight: bold;
+}

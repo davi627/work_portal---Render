@@ -1,0 +1,45 @@
+nav {
+  width: 100%;
+  color: #fff;
+  padding: 4px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  transition: background-color 0.3s; /* Smooth transition for color change */
+}
+
+nav.scrolled {
+  background-color: blue; /* Color when scrolled */
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  color: lightblue;
+}
+
+nav ul li button {
+  cursor: pointer;
+}
+
+button {
+  border-radius: 5px;
+  height: 25px;
+  background-color: whitesmoke;
+  color: black;
+}
+
+button:hover {
+  background: lightblue;
+}
