@@ -16,7 +16,7 @@ const Accept = () => {
   useEffect(() => {
     const accept = async () => {
       const email = searchParams.get('email');
-      console.log('email: ', email);
+      console.log('theEmail: ', email);
       const token = searchParams.get('token');
       console.log('token: ', token);
 
