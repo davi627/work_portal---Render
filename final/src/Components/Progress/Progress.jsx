@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './progress.css';
 import { Link } from 'react-router-dom';
+import { url } from '../../utils/apiRequest';
 
 function Progress() {
   const [apply, setApply] = useState([]);
@@ -11,9 +12,7 @@ function Progress() {
   useEffect(() => {
     const fetchApply = async () => {
       try {
-        const response = await axios.get(
-          'http://localhost:3000/apply/getapplication'
-        );
+        const response = await axios.get(`${url}/apply/getapplication`);
         setApply(response.data);
       } catch (error) {
         setError('Failed to fetch applications');
@@ -25,7 +24,7 @@ function Progress() {
 
   const handleApprove = async (email) => {
     try {
-      const res = await axios.post('http://localhost:3000/apply/approve', {
+      const res = await axios.post(`${url}/apply/approve`, {
         email,
       });
       if (res.status === 200) {
