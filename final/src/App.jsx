@@ -57,7 +57,7 @@ const App = () => {
         />
         <Route path="/track" element={<Track />} />
         <Route path="reportprogress" element={<Report />} />
-        <Route path="/accept" element={<Accept />} />
+        <Route path="/accept/:email/:token" element={<Accept />} />
         <Route path="/prog" element={<Applyprogress />} />
         <Route path="/laundry" element={<Laundry />} />
         <Route path="/gardening" element={<Gardening />} />

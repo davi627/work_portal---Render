@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useSearchParams } from 'react-router-dom';
+import { useParams, useSearchParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { ClipLoader } from 'react-spinners'; // Import ClipLoader
 import './accept.css';
@@ -15,10 +15,14 @@ const Accept = () => {
 
   useEffect(() => {
     const accept = async () => {
-      const email = searchParams.get('email');
-      console.log('theEmail: ', email);
-      const token = searchParams.get('token');
-      console.log('token: ', token);
+      // const email = searchParams.get('email');
+      // console.log('theEmail: ', email);
+      // const token = searchParams.get('token');
+      // console.log('token: ', token);
+      const { email, token } = useParams();
+
+      console.log('theEmail:', email);
+      console.log('token:', token);
 
       if (email && token) {
         try {

@@ -63,7 +63,7 @@ router.post('/approve', async (req, res) => {
     // Send approval email
     
     try {
-      const link = `${process.env.CLIENT_URL}/accept?email=${email}&token=${token}`;
+      const link = `${process.env.CLIENT_URL}/accept/${email}/${token}`;
       await transporter.sendMail({
         from: 'davidmbita001@gmail.com',
         to: email,
